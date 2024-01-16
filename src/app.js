@@ -24,4 +24,10 @@ window.onload = function() {
   }
 
   document.getElementById("excuse").innerHTML = generator();
+
+  document
+    .getElementById("generate-button")
+    .addEventListener("click", function() {
+      document.getElementById("excuse").innerHTML = generator();
+    });
 };
